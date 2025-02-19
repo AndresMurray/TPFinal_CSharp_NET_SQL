@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "dominio\dominio.csproj", "{E30A8955-D1B1-4E13-825D-A40664AE77E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negocio", "negocio\negocio.csproj", "{EAC0F80B-1C78-45BA-9131-A6F2B05EB1C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winform-app", "winform-app\winform-app.csproj", "{4A19C35B-7D68-49E4-8D1F-AC9E77291C5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E30A8955-D1B1-4E13-825D-A40664AE77E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E30A8955-D1B1-4E13-825D-A40664AE77E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E30A8955-D1B1-4E13-825D-A40664AE77E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E30A8955-D1B1-4E13-825D-A40664AE77E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC0F80B-1C78-45BA-9131-A6F2B05EB1C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC0F80B-1C78-45BA-9131-A6F2B05EB1C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC0F80B-1C78-45BA-9131-A6F2B05EB1C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC0F80B-1C78-45BA-9131-A6F2B05EB1C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A19C35B-7D68-49E4-8D1F-AC9E77291C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A19C35B-7D68-49E4-8D1F-AC9E77291C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A19C35B-7D68-49E4-8D1F-AC9E77291C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A19C35B-7D68-49E4-8D1F-AC9E77291C5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

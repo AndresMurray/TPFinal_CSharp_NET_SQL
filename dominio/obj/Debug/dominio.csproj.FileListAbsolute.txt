@@ -1,0 +1,6 @@
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\dominio\bin\Debug\dominio.dll
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\dominio\bin\Debug\dominio.pdb
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\dominio\obj\Debug\dominio.dll
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\dominio\obj\Debug\dominio.pdb

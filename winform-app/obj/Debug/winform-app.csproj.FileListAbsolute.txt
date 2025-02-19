@@ -1,0 +1,15 @@
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform-app.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform_app.frmArticulos.resources
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform_app.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform-app.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform-app.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\bin\Debug\winform-app.exe.config
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\bin\Debug\winform-app.exe
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\bin\Debug\winform-app.pdb
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\bin\Debug\dominio.dll
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\bin\Debug\negocio.dll
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\bin\Debug\dominio.pdb
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\bin\Debug\negocio.pdb
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform-.0F641084.Up2Date
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform-app.exe
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform-app.pdb
