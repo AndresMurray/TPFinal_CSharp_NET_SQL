@@ -17,6 +17,7 @@ namespace winform_app
     {
         private List<Articulo> articulos;
         private Articulo seleccionado;
+        private Helper help;
         public frmArticulos()
         {
             InitializeComponent(); 
@@ -45,13 +46,14 @@ namespace winform_app
         private void cargar()
         {
             ArticuloNegocio articulosRepo = new ArticuloNegocio();
+            help = new Helper();
             try
             {
                 articulos = articulosRepo.listarArticulos();
                 dgvArticulos.DataSource = articulos;
-                ocultarColumnas();
-                cargarImagen(articulos[0].UrlImagen);
-                ajustarAlturaDGV();
+                help.ocultarColumnas(dgvArticulos);
+                help.cargarImagen(articulos[0].UrlImagen, picBoxImagen);
+                help.ajustarAlturaDGV(dgvArticulos); 
 
             }
             catch (Exception)
@@ -62,57 +64,30 @@ namespace winform_app
 
         }
 
-        private void cargarImagen(string img)
-        {
-            try
-            {
-                // MessageBox.Show("Cargando imagen desde: " + img);  // Verificar URL
-                picBoxImagen.Load(img);
-            }
-            catch (Exception)
-            {
-                //MessageBox.Show("Error al cargar imagen: "); // Para ver el mensaje de error
-                picBoxImagen.Load("https://img.freepik.com/vector-premium/fondo-patron-transparente-cuadrado-vacio-ilustracion-vectorial_522680-518.jpg");
-            }
-        }
-
-        private void ocultarColumnas()
-        {
-            dgvArticulos.Columns["UrlImagen"].Visible = false;
-            dgvArticulos.Columns["Id"].Visible = false;
-        }
+      
 
         private void dgvArticulos_Click(object sender, EventArgs e)
         {
             seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            cargarImagen(seleccionado.UrlImagen);
+            help.cargarImagen(seleccionado.UrlImagen, picBoxImagen); 
         }
 
 
-        private void ajustarAlturaDGV()
+
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
-            int maxFilasVisibles = 4; // Máximo de filas visibles sin scroll
-            int filas = dgvArticulos.Rows.Count;
-            int alturaFila = dgvArticulos.RowTemplate.Height;
-            int alturaEncabezado = dgvArticulos.ColumnHeadersHeight;
-
-            // Si hay más de 4 filas, solo mostrar 4 filas y activar el scroll
-            if (filas > maxFilasVisibles)
-            {
-                filas = maxFilasVisibles;
-                dgvArticulos.ScrollBars = ScrollBars.Vertical;
-            }
-            else
-            {
-                dgvArticulos.ScrollBars = ScrollBars.None;
-            }
-
-            dgvArticulos.Height = (filas * alturaFila) + alturaEncabezado + 2;
+            frmAgregar alta = new frmAgregar();
+            alta.ShowDialog();
+            cargar();// vuelvo a cargar para que se muestre el articulo agregado
         }
 
-
-
-
-
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            seleccionado = new Articulo();
+            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            frmAgregar modificar = new frmAgregar(seleccionado);
+            modificar.ShowDialog();
+            cargar();
+        }
     }
 }

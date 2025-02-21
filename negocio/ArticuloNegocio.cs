@@ -71,7 +71,64 @@ namespace negocio
             }
         }
 
+        public void agregar(Articulo nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
 
+            try
+            {
+                datos.setearConsulta("INSERT INTO ARTICULOS(Codigo, Nombre, Descripcion, IdMarca, IdCategoria, ImagenUrl, Precio) values(@Cod, @Nom, @Desc, @IdMarca, @IdCategoria, @Img, @Precio)");
+
+                datos.setearParametro("@Cod", nuevo.Codigo);
+                datos.setearParametro("@Nom", nuevo.Nombre);
+                datos.setearParametro("@Desc", nuevo.Descripcion);
+                datos.setearParametro("@IdMarca", nuevo.Marca.Id);
+                datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
+                datos.setearParametro("@Img", nuevo.UrlImagen);
+                datos.setearParametro("@Precio", nuevo.Precio);
+
+                datos.ejecutarAccion();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void modificar (Articulo nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("UPDATE ARTICULOS set Codigo = @Cod , Nombre = @Nom, Descripcion = @Desc, IdMarca = @IdMarca, IdCategoria = @IdCategoria , ImagenUrl = @Img, Precio = @Precio Where Id = @Id");
+                datos.setearParametro("@Id", nuevo.Id);
+                datos.setearParametro("@Cod", nuevo.Codigo);
+                datos.setearParametro("@Nom", nuevo.Nombre);
+                datos.setearParametro("@Desc", nuevo.Descripcion);
+                datos.setearParametro("@IdMarca", nuevo.Marca.Id);
+                datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
+                datos.setearParametro("@Img", nuevo.UrlImagen);
+                datos.setearParametro("@Precio", nuevo.Precio);
+
+                datos.ejecutarAccion();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+
+       
 
     }
 }
