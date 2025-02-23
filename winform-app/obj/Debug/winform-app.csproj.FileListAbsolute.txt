@@ -14,3 +14,4 @@ C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\w
 C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform-app.exe
 C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform-app.pdb
 C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform_app.frmAgregar.resources
+C:\Users\ASUS\Desktop\Curso C# Nivel 2 [.Net + SQL]\TPFinalNivel2_MurrayRoppel\winform-app\obj\Debug\winform_app.frmDetalle.resources

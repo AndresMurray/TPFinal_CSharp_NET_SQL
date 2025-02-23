@@ -29,6 +29,9 @@ namespace winform_app
         {
             dgv.Columns["UrlImagen"].Visible = false;
             dgv.Columns["Id"].Visible = false;
+            dgv.Columns["Descripcion"].Visible = false;
+            dgv.Columns["Categoria"].Visible = false;
+            dgv.Columns["Codigo"].Visible = false;
         }
 
 
@@ -51,6 +54,13 @@ namespace winform_app
             }
 
             dgv.Height = (filas * alturaFila) + alturaEncabezado + 2;
+        }
+
+        public void mostrarDetalle(DataGridView dgv)
+        {
+            dgv.Columns["Descripcion"].Visible = true;
+            dgv.Columns["Categoria"].Visible = true;
+            dgv.Columns["Codigo"].Visible = true;
         }
 
     }

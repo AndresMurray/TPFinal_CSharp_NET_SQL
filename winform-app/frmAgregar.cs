@@ -12,6 +12,7 @@ using dominio;
 using System.ComponentModel.Design;
 using System.IO;
 using System.Configuration;
+using System.Globalization;
 
 namespace winform_app
 {
@@ -36,9 +37,9 @@ namespace winform_app
 
         private void frmAgregar_Load(object sender, EventArgs e)
         {
-            CategoriaNegocio categoria  = new CategoriaNegocio();
+            CategoriaNegocio categoria = new CategoriaNegocio();
             MarcaNegocio marca = new MarcaNegocio();
-            help = new Helper();   
+            help = new Helper();
             try
             {
                 cboCategoria.DataSource = categoria.listarCategorias();
@@ -57,7 +58,7 @@ namespace winform_app
                     txtNombre.Text = articulo.Nombre;
                     txtPrecio.Text = articulo.Precio.ToString("C2");
                     txtImagen.Text = articulo.UrlImagen;
-                    help.cargarImagen(txtImagen.Text,pbImagenAgregar);
+                    help.cargarImagen(txtImagen.Text, pbImagenAgregar);
                     cboCategoria.SelectedValue = articulo.Categoria.Id;
                     cboMarca.SelectedValue = articulo.Marca.Id;
 
@@ -82,10 +83,10 @@ namespace winform_app
                 articulo.Descripcion = txtDescripcion.Text;
 
 
-                articulo.Precio =  Convert.ToDecimal(txtPrecio.Text); 
+                articulo.Precio = Convert.ToDecimal(txtPrecio.Text);
                 articulo.Codigo = txtCodigo.Text;
-                articulo.Nombre = txtNombre.Text;   
-                articulo.UrlImagen= txtImagen.Text;
+                articulo.Nombre = txtNombre.Text;
+                articulo.UrlImagen = txtImagen.Text;
                 articulo.Categoria = (Categoria)cboCategoria.SelectedItem;
                 articulo.Marca = (Marca)cboMarca.SelectedItem;
 
@@ -130,7 +131,7 @@ namespace winform_app
             if (archivo.ShowDialog() == DialogResult.OK)
             {
                 txtImagen.Text = archivo.FileName;
-                help.cargarImagen(archivo.FileName,pbImagenAgregar);
+                help.cargarImagen(archivo.FileName, pbImagenAgregar);
             }
         }
 
@@ -138,5 +139,13 @@ namespace winform_app
         {
             help.cargarImagen(txtImagen.Text, pbImagenAgregar);
         }
+
+
+
+
+
+
+
+
     }
 }

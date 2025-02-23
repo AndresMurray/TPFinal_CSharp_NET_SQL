@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D; 
 using negocio;
-using dominio; 
+using dominio;
+using System.Globalization;
 
 namespace winform_app
 {
@@ -53,7 +54,8 @@ namespace winform_app
                 dgvArticulos.DataSource = articulos;
                 help.ocultarColumnas(dgvArticulos);
                 help.cargarImagen(articulos[0].UrlImagen, picBoxImagen);
-                help.ajustarAlturaDGV(dgvArticulos); 
+               // help.ajustarAlturaDGV(dgvArticulos);
+                
 
             }
             catch (Exception)
@@ -88,6 +90,30 @@ namespace winform_app
             frmAgregar modificar = new frmAgregar(seleccionado);
             modificar.ShowDialog();
             cargar();
+        }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            frmDetalle detalle = new frmDetalle(seleccionado);
+            detalle.ShowDialog();
+            cargar();
+        }
+
+
+       
+
+        private void dgvArticulos_CellFormatting_1(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dgvArticulos.Columns[e.ColumnIndex].Name == "Precio")
+            {
+                // Formatear el valor de la celda como moneda en ARS
+                if (e.Value != null)
+                {
+                    e.Value = Convert.ToDecimal(e.Value).ToString("C", new CultureInfo("es-AR"));
+                    e.FormattingApplied = true;  // Marca como formateado
+                }
+            }
         }
     }
 }
