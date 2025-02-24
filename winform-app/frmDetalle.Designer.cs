@@ -80,7 +80,7 @@
             this.txtCodDetalle.Name = "txtCodDetalle";
             this.txtCodDetalle.ReadOnly = true;
             this.txtCodDetalle.Size = new System.Drawing.Size(301, 22);
-            this.txtCodDetalle.TabIndex = 3;
+            this.txtCodDetalle.TabIndex = 0;
             // 
             // txtDescDetalle
             // 
@@ -88,7 +88,7 @@
             this.txtDescDetalle.Name = "txtDescDetalle";
             this.txtDescDetalle.ReadOnly = true;
             this.txtDescDetalle.Size = new System.Drawing.Size(301, 22);
-            this.txtDescDetalle.TabIndex = 4;
+            this.txtDescDetalle.TabIndex = 2;
             // 
             // txtNomDetalle
             // 
@@ -96,7 +96,7 @@
             this.txtNomDetalle.Name = "txtNomDetalle";
             this.txtNomDetalle.ReadOnly = true;
             this.txtNomDetalle.Size = new System.Drawing.Size(301, 22);
-            this.txtNomDetalle.TabIndex = 5;
+            this.txtNomDetalle.TabIndex = 1;
             // 
             // txtMarca
             // 
@@ -104,8 +104,7 @@
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.ReadOnly = true;
             this.txtMarca.Size = new System.Drawing.Size(301, 22);
-            this.txtMarca.TabIndex = 7;
-         
+            this.txtMarca.TabIndex = 3;
             // 
             // lblMarca
             // 
@@ -123,7 +122,7 @@
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.ReadOnly = true;
             this.txtCategoria.Size = new System.Drawing.Size(301, 22);
-            this.txtCategoria.TabIndex = 9;
+            this.txtCategoria.TabIndex = 4;
             // 
             // lblCategoria
             // 
@@ -141,7 +140,7 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.ReadOnly = true;
             this.txtPrecio.Size = new System.Drawing.Size(301, 22);
-            this.txtPrecio.TabIndex = 11;
+            this.txtPrecio.TabIndex = 5;
             // 
             // lblPrecio
             // 
