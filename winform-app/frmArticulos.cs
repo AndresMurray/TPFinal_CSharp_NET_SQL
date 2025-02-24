@@ -115,5 +115,30 @@ namespace winform_app
                 }
             }
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿Esta seguro que quiere eliminar este disco?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                if (respuesta == DialogResult.Yes)
+                {
+                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    negocio.eliminar(seleccionado);
+
+                    cargar();
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
+        }
     }
 }
