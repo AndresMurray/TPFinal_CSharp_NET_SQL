@@ -148,7 +148,55 @@ namespace negocio
             }
         }
 
-       
 
+        public List<Articulo> filtrar(string campo, string criterio, string filtro)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            List<Articulo> discos = new List<Articulo>();
+
+            try
+            {
+
+                string consulta = "select a.Codigo as codigoArticulo, a.Descripcion as descripArticulo, a.Id as articuloId, a.ImagenUrl, a.Nombre, a.Precio," +
+                                   "c.Id AS idCategoria, c.Descripcion as categoriaDescrip, m.Id as idMarca, m.Descripcion as marcaDescrip " +
+                                   "from ARTICULOS a INNER JOIN CATEGORIAS c ON(a.IdCategoria = c.Id) INNER JOIN MARCAS m ON(a.IdMarca = m.Id) WHERE ";
+                string consultaFinal = configurarConsulta(campo, criterio, filtro, consulta);
+                datos.setearConsulta(consultaFinal);
+                
+
+                datos.ejecutarLectura();
+
+                return armarLista(datos);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { datos.cerrarConexion(); }
+        }
+
+        private string configurarConsulta(string campo, string criterio, string filtro, string consulta)
+        {
+            if (campo == "Precio")
+            {
+                switch (criterio)
+                {
+                    case "Mayor a":
+                        consulta += "a.Precio > " + filtro;
+                        break;
+                    case "Menor a":
+                        consulta += "a.Precio < " + filtro;
+                        break;
+              
+                }
+            }
+            else if (campo == "Marca")
+            {
+                consulta += "m.Descripcion = '" + criterio + "'";
+            }
+            return consulta;
+        }
+    
     }
 }

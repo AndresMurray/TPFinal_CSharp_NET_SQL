@@ -56,7 +56,7 @@ namespace winform_app
                     txtCodigo.Text = articulo.Codigo;
                     txtDescripcion.Text = articulo.Descripcion;
                     txtNombre.Text = articulo.Nombre;
-                    txtPrecio.Text = articulo.Precio.ToString("C2");
+                    txtPrecio.Text = articulo.Precio.ToString();
                     txtImagen.Text = articulo.UrlImagen;
                     help.cargarImagen(txtImagen.Text, pbImagenAgregar);
                     cboCategoria.SelectedValue = articulo.Categoria.Id;
@@ -70,6 +70,8 @@ namespace winform_app
             }
         }
 
+
+
         private void btnAceptar_Click(object sender, EventArgs e)
         {
 
@@ -82,6 +84,11 @@ namespace winform_app
                     articulo = new Articulo();
                 articulo.Descripcion = txtDescripcion.Text;
 
+                if (!help.validarPrecio(txtPrecio.Text))
+                {
+                    MessageBox.Show("El precio no es válido. Debe ser un número con hasta dos decimales.");
+                    return;
+                }
 
                 articulo.Precio = Convert.ToDecimal(txtPrecio.Text);
                 articulo.Codigo = txtCodigo.Text;
@@ -125,15 +132,19 @@ namespace winform_app
 
         private void btnAgregarImg_Click(object sender, EventArgs e)
         {
+           
             archivo = new OpenFileDialog();
-            archivo.Filter = "jpg|*.jpg;|png|*.png";
+            archivo.Filter = "Archivos de imagen (*.jpg;*.jpeg;*.png)|*.jpg;*.jpeg;*.png"; // Filtro de imágenes
 
+          
             if (archivo.ShowDialog() == DialogResult.OK)
             {
+             
                 txtImagen.Text = archivo.FileName;
                 help.cargarImagen(archivo.FileName, pbImagenAgregar);
             }
         }
+
 
         private void txtImagen_Leave(object sender, EventArgs e)
         {

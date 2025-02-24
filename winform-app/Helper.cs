@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -56,12 +57,26 @@ namespace winform_app
             dgv.Height = (filas * alturaFila) + alturaEncabezado + 2;
         }
 
-        public void mostrarDetalle(DataGridView dgv)
+
+        public bool soloNumeros(string cadena)
         {
-            dgv.Columns["Descripcion"].Visible = true;
-            dgv.Columns["Categoria"].Visible = true;
-            dgv.Columns["Codigo"].Visible = true;
+            foreach (char caracter in cadena)
+            {
+                if (!(char.IsNumber(caracter)))
+                    return false;
+            }
+            return true;
         }
+
+
+        public bool validarPrecio(string precio)
+        {
+            
+            string patron = @"^\d+(\,|\.)?\d{0,2}$";
+
+            return Regex.IsMatch(precio, patron);
+        }
+
 
     }
 }

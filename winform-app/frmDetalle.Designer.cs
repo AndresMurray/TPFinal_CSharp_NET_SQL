@@ -50,7 +50,7 @@
             this.lblCodigoDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigoDetalle.Location = new System.Drawing.Point(85, 64);
             this.lblCodigoDetalle.Name = "lblCodigoDetalle";
-            this.lblCodigoDetalle.Size = new System.Drawing.Size(51, 16);
+            this.lblCodigoDetalle.Size = new System.Drawing.Size(40, 13);
             this.lblCodigoDetalle.TabIndex = 0;
             this.lblCodigoDetalle.Text = "Código";
             // 
@@ -60,7 +60,7 @@
             this.lblNombreDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreDetalle.Location = new System.Drawing.Point(85, 110);
             this.lblNombreDetalle.Name = "lblNombreDetalle";
-            this.lblNombreDetalle.Size = new System.Drawing.Size(56, 16);
+            this.lblNombreDetalle.Size = new System.Drawing.Size(44, 13);
             this.lblNombreDetalle.TabIndex = 1;
             this.lblNombreDetalle.Text = "Nombre";
             // 
@@ -70,7 +70,7 @@
             this.lblDescripcionDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcionDetalle.Location = new System.Drawing.Point(85, 161);
             this.lblDescripcionDetalle.Name = "lblDescripcionDetalle";
-            this.lblDescripcionDetalle.Size = new System.Drawing.Size(79, 16);
+            this.lblDescripcionDetalle.Size = new System.Drawing.Size(63, 13);
             this.lblDescripcionDetalle.TabIndex = 2;
             this.lblDescripcionDetalle.Text = "Descripción";
             // 
@@ -105,6 +105,7 @@
             this.txtMarca.ReadOnly = true;
             this.txtMarca.Size = new System.Drawing.Size(301, 22);
             this.txtMarca.TabIndex = 7;
+         
             // 
             // lblMarca
             // 
@@ -112,7 +113,7 @@
             this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.Location = new System.Drawing.Point(85, 213);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(45, 16);
+            this.lblMarca.Size = new System.Drawing.Size(37, 13);
             this.lblMarca.TabIndex = 6;
             this.lblMarca.Text = "Marca";
             // 
@@ -130,7 +131,7 @@
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.Location = new System.Drawing.Point(85, 267);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(66, 16);
+            this.lblCategoria.Size = new System.Drawing.Size(54, 13);
             this.lblCategoria.TabIndex = 8;
             this.lblCategoria.Text = "Categoría";
             // 
@@ -148,7 +149,7 @@
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.Location = new System.Drawing.Point(85, 322);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(46, 16);
+            this.lblPrecio.Size = new System.Drawing.Size(37, 13);
             this.lblPrecio.TabIndex = 10;
             this.lblPrecio.Text = "Precio";
             // 
@@ -165,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 466);
+            this.ClientSize = new System.Drawing.Size(855, 474);
             this.Controls.Add(this.pbImagen);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.lblPrecio);
