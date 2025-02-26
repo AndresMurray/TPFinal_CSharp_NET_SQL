@@ -133,7 +133,7 @@ namespace winform_app
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
-                DialogResult respuesta = MessageBox.Show("¿Esta seguro que quiere eliminar este disco?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult respuesta = MessageBox.Show("¿Esta seguro que quiere eliminar este Artículo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
                 if (respuesta == DialogResult.Yes)
                 {
@@ -257,11 +257,17 @@ namespace winform_app
             
         }
 
+        private void dgvArticulos_KeyDown(object sender, KeyEventArgs e)
+        {
+            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            help.cargarImagen(seleccionado.UrlImagen, picBoxImagen);
+        }
 
-
-
-
-
+        private void dgvArticulos_KeyUp(object sender, KeyEventArgs e)
+        {
+            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            help.cargarImagen(seleccionado.UrlImagen, picBoxImagen);
+        }
     }
 }
 

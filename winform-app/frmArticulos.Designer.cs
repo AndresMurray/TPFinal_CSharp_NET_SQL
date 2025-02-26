@@ -76,6 +76,8 @@
             this.dgvArticulos.TabIndex = 0;
             this.dgvArticulos.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvArticulos_CellFormatting_1);
             this.dgvArticulos.Click += new System.EventHandler(this.dgvArticulos_Click);
+            this.dgvArticulos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvArticulos_KeyDown);
+            this.dgvArticulos.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dgvArticulos_KeyUp);
             // 
             // picBoxImagen
             // 
