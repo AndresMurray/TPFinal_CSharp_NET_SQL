@@ -47,30 +47,30 @@
             // lblCodigoDetalle
             // 
             this.lblCodigoDetalle.AutoSize = true;
-            this.lblCodigoDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoDetalle.Font = new System.Drawing.Font("Tahoma", 10.2F);
             this.lblCodigoDetalle.Location = new System.Drawing.Point(85, 64);
             this.lblCodigoDetalle.Name = "lblCodigoDetalle";
-            this.lblCodigoDetalle.Size = new System.Drawing.Size(40, 13);
+            this.lblCodigoDetalle.Size = new System.Drawing.Size(60, 21);
             this.lblCodigoDetalle.TabIndex = 0;
             this.lblCodigoDetalle.Text = "Código";
             // 
             // lblNombreDetalle
             // 
             this.lblNombreDetalle.AutoSize = true;
-            this.lblNombreDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreDetalle.Font = new System.Drawing.Font("Tahoma", 10.2F);
             this.lblNombreDetalle.Location = new System.Drawing.Point(85, 110);
             this.lblNombreDetalle.Name = "lblNombreDetalle";
-            this.lblNombreDetalle.Size = new System.Drawing.Size(44, 13);
+            this.lblNombreDetalle.Size = new System.Drawing.Size(68, 21);
             this.lblNombreDetalle.TabIndex = 1;
             this.lblNombreDetalle.Text = "Nombre";
             // 
             // lblDescripcionDetalle
             // 
             this.lblDescripcionDetalle.AutoSize = true;
-            this.lblDescripcionDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionDetalle.Font = new System.Drawing.Font("Tahoma", 10.2F);
             this.lblDescripcionDetalle.Location = new System.Drawing.Point(85, 161);
             this.lblDescripcionDetalle.Name = "lblDescripcionDetalle";
-            this.lblDescripcionDetalle.Size = new System.Drawing.Size(63, 13);
+            this.lblDescripcionDetalle.Size = new System.Drawing.Size(96, 21);
             this.lblDescripcionDetalle.TabIndex = 2;
             this.lblDescripcionDetalle.Text = "Descripción";
             // 
@@ -109,10 +109,10 @@
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.Font = new System.Drawing.Font("Tahoma", 10.2F);
             this.lblMarca.Location = new System.Drawing.Point(85, 213);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(37, 13);
+            this.lblMarca.Size = new System.Drawing.Size(55, 21);
             this.lblMarca.TabIndex = 6;
             this.lblMarca.Text = "Marca";
             // 
@@ -127,10 +127,10 @@
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Font = new System.Drawing.Font("Tahoma", 10.2F);
             this.lblCategoria.Location = new System.Drawing.Point(85, 267);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(54, 13);
+            this.lblCategoria.Size = new System.Drawing.Size(81, 21);
             this.lblCategoria.TabIndex = 8;
             this.lblCategoria.Text = "Categoría";
             // 
@@ -145,10 +145,10 @@
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Font = new System.Drawing.Font("Tahoma", 10.2F);
             this.lblPrecio.Location = new System.Drawing.Point(85, 322);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(37, 13);
+            this.lblPrecio.Size = new System.Drawing.Size(55, 21);
             this.lblPrecio.TabIndex = 10;
             this.lblPrecio.Text = "Precio";
             // 
@@ -165,7 +165,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 474);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
+            this.ClientSize = new System.Drawing.Size(853, 466);
             this.Controls.Add(this.pbImagen);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.lblPrecio);
@@ -179,6 +180,7 @@
             this.Controls.Add(this.lblDescripcionDetalle);
             this.Controls.Add(this.lblNombreDetalle);
             this.Controls.Add(this.lblCodigoDetalle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximumSize = new System.Drawing.Size(871, 513);
             this.MinimumSize = new System.Drawing.Size(871, 513);
             this.Name = "frmDetalle";
@@ -204,6 +206,6 @@
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label lblPrecio;
-        private System.Windows.Forms.PictureBox pbImagen;
+        private System.Windows.Forms.PictureBox pbImagen; 
     }
 }

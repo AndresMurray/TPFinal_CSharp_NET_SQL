@@ -42,6 +42,8 @@ namespace winform_app
         private void frmArticulos_Load(object sender, EventArgs e)
         {
             cargar();
+          
+
 
         }
 
@@ -49,6 +51,8 @@ namespace winform_app
         {
             ArticuloNegocio articulosRepo = new ArticuloNegocio();
             help = new Helper();
+           
+
             try
             {
                 articulos = articulosRepo.listarArticulos();
@@ -93,7 +97,7 @@ namespace winform_app
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            seleccionado = new Articulo();
+            
             seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             frmAgregar modificar = new frmAgregar(seleccionado);
             modificar.ShowDialog();
@@ -252,5 +256,12 @@ namespace winform_app
             cargar();
             
         }
+
+
+
+
+
+
     }
 }
+
